@@ -1,0 +1,1013 @@
+/********** Template CSS **********/
+:root {
+    --yell: #ffc107;
+    --primary: #444444;
+    --secondary: #34AD54;
+    --light: #EEF9FF;
+    --dark: #091E3E;
+}
+
+.custom-image {
+    width: 300px; /* ปรับขนาดความกว้างตามที่ต้องการ */
+    height: 180px; /* ปรับขนาดความสูงตามที่ต้องการ */
+    object-fit: cover; /* ใช้เพื่อปรับขนาดรูปภาพให้พอดีกับส่วนที่กำหนดไว้ */
+}
+
+h1 img {
+    width: 60px; /* ปรับขนาดรูปภาพตามที่คุณต้องการ */
+    height: 60px;
+    margin-right: 10px; /* ระยะห่างระหว่างรูปภาพกับข้อความ */
+  }
+
+/*css*/
+/*Page Detail-Promotion
+/* Existing CSS */
+
+.main-promotion-image img {
+    position: sticky;
+    top: 100px;
+}
+
+.promotion-main-image {
+    aspect-ratio: 1.3;
+    border-radius: 25px;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #ffffff;
+    line-height: 1.6; /* Adjusted line-height for better readability */
+    margin: 0;
+    text-align: left;
+}
+
+section {
+    padding-top: 25px;
+}
+
+.page-section .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+/* Additional CSS for card styling */
+
+.card {
+    border: none; /* Remove border from cards */
+    border-radius: 15px; /* Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+    margin-top: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+/* Styles for the specific section */
+.page-detail {
+    font-family: "NT";
+    font-size: 16px; /* Adjusted font size for better readability */
+    line-height: 1.8; /* Adjusted line-height for better readability */
+    margin-bottom: 20px; /* Adjusted margin-bottom for spacing */
+}
+
+/* Add the rest of your existing CSS below this point */
+/*สมัครเลย*/
+.round-filled-button {
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px; /* เพิ่มระยะห่างทางขวา */
+}
+
+.round-filled-button:hover {
+    background-color: #d6d5d5;
+    color: #000;
+}
+
+  /*ย้อนกลับ*/
+  .back-button {
+    display: flex;
+    align-items: center; /* ตรงกลางตามแนวดิ่ง */
+    text-decoration: none;
+    color: #323232; /* เปลี่ยนสีตามที่คุณต้องการ */
+    padding: 25px; /* ปรับขนาดการเว้นระยะห่าง */
+  }
+  
+  .back-button i {
+    margin-right: 2px; /* ปรับระยะห่างระหว่างไอคอนกับข้อความ */
+    color: #adb814;
+  }
+  
+
+  /*start news details */
+/* Main Carousel */
+section {
+    margin: 20px 0; /* Add margin as needed */
+}
+
+.main-carousel-list {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease; /* Add a smooth transition for sliding effect */
+}
+
+.swiper-slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+/* Slide Content Styles */
+.slide-content {
+    position: relative;
+    text-align: center; /* or adjust as needed */
+}
+
+.carousel-content {
+    padding: 20px; /* Add padding as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background */
+}
+
+.carousel-tag button {
+    background-color: #3498db; /* Add your preferred color */
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.carousel-title {
+    font-size: 24px; /* or adjust as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.news-detail-date {
+    font-size: 14px; /* or adjust as needed */
+    color: #777;
+}
+
+.carousel-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Add border-radius as needed */
+    margin-top: 10px; /* Adjust as needed */
+}
+
+/* Swiper Pagination Styles */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+    background-color: #bbb; /* Add your preferred color */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #3498db; /* Add your preferred active color */
+}
+
+/* Swiper Navigation Styles (if needed) */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    background-color: #3498db; /* Add your preferred color */
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Disable navigation buttons on disabled state */
+.swiper-button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+/* Page News Styles */
+.page-section {
+    padding: 40px 0; /* Add padding as needed */
+    background-color: rgb(255, 255, 255); /* Add your preferred background color */
+}
+
+.section-author {
+    text-align: left; /* or adjust as needed */
+}
+
+/* Author Styles */
+.author {
+    margin-bottom: 20px; /* Add margin as needed */
+}
+
+.author-avatar {
+    width: 50px; /* Add your preferred size */
+    height: 50px; /* Add your preferred size */
+    border-radius: 50%; /* Make it round */
+    margin-right: 10px; /* Add margin as needed */
+}
+
+.author-name {
+    font-weight: bold; /* or adjust as needed */
+}
+
+/* Horizontal Line Styles */
+hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Add your preferred color */
+    margin: 20px 0; /* Add margin as needed */
+}
+
+/* Blog Tags Styles */
+.blog-detail-tags {
+    margin-bottom: 20px; /* Add margin as needed */
+}
+
+.blog-tags {
+    display: inline-block; /* Align tags horizontally */
+}
+
+.blog-tag {
+    background-color: #3498db; /* Add your preferred color */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px; /* Add margin as needed */
+    text-decoration: none; /* Remove underline */
+}
+
+.blog-tag a {
+    color: #fff; /* Set tag link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.blog-tag a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+  /*end news details */
+ 
+
+/* Add this CSS to your stylesheet or within a style tag */
+.floating-content-wrapper img {
+    width: 100%; 
+    display: block; 
+}
+
+.map--content {
+    padding-top: 70px;
+    height: 100vh;
+    width: 100vw;
+}
+#map{
+    width:100%;
+    height:100%;
+}
+
+.siteloading{
+    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    z-index: 2;
+}
+
+.siteloading .loading{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.siteloading .loading .loadingimg img{
+    width:20%;
+    margin-top:20px;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.map--content #navContainer-desktop{
+    position: absolute;
+    z-index: 10;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 30px;
+}
+
+.map--content #navContainer-desktop #searchContainer{
+    width: 100%;
+    background: #FFF;
+    padding: 24px;
+    margin-top: 10px;
+    border-radius: 18px;
+}
+.checkareabtn,.checkareaonchangebtn,.checkareaagainbtn{
+    margin:10px;
+}
+.form-search {
+    padding-right: 2.75rem;
+    background: transparent url("/new-fiber/assets/images/map/magnifying-glass.png") no-repeat 13px;
+    background-position: right;
+    background-position-x: 97%;
+    background-position-y: 50%;
+}
+
+.map--content #navContainer-desktop #menuContainer{
+    width: 100%;
+    background: #FFF;
+    padding: 24px;
+    border-radius: 18px;
+}
+.map--content #navContainer-desktop #menuContainer a{
+    font-size: 18px
+}
+
+.nav-group{
+    display: flex;
+    justify-content: space-between;
+}
+.arrow-icon{
+    padding-right: 10px;
+}
+#backToPackage{
+    display: flex;
+    text-decoration: none;
+    color: #212529;
+}
+#ihere{
+    display: flex;
+    align-items: flex-start;
+    color: #E0513E;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.bg_button_map{
+    --initialTextColor: #5B5C54;
+    --slideTextColor: #5B5C54;
+    --initialBgColor: #FFD103;
+    --slideBgColor: #FFDB43;
+    color: var(--initialTextColor);
+    background-image: linear-gradient(90deg, var(--initialBgColor) 0%, var(--initialBgColor) 50%, var(--slideBgColor) 50%, var(--slideBgColor) 100%);
+    background-size: 200%;
+    transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63), color 0.2s linear;
+    transition-delay: 0s, 0.15s;
+}
+
+.map--content #navContainer-mobile{
+    display: none;
+}
+.map--content #searchContainer-mobile{
+    display: none;
+}
+.map--content #footerContainer-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .map--content{
+        padding-top: 0;
+    }
+
+    .map--content #navContainer-desktop{
+        display: none;
+    }
+
+    .map--content #navContainer-mobile{
+        display: block;
+        position: fixed;
+        width: 100vw;
+        min-height: 70px;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 6;
+        transition: all 0.5s;
+        background: #fff;
+    }
+    .map--content #searchContainer-mobile{
+        display: block;
+        position: fixed;
+        top: 70px;
+        width: 100vw;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-bottom: 20px;
+        z-index: 6;
+        transition: all 0.5s;
+        background: #fff;
+    }
+    .map--content #footerContainer-mobile{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 6;
+        border-radius: 30px 30px 0px 0px;
+        background: #fff;
+    }
+
+    .contact-menu{
+        display: none;
+    }
+}
+
+/*** Spinner ***/
+.spinner {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Heading ***/
+h1,
+h2,
+.fw-bold {
+    font-weight: 800 !important;
+}
+
+h3,
+h4,
+.fw-semi-bold {
+    font-weight: 700 !important;
+}
+
+h5,
+h6,
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+
+/*** Button ***/
+.btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #ffffff;
+    box-shadow: inset 0 0 0 50px transparent;
+}
+
+.btn-primary:hover {
+    box-shadow: inset 0 0 0 0 var(--primary);
+}
+
+.btn-secondary:hover {
+    box-shadow: inset 0 0 0 0 var(--secondary);
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.btn-primary2,
+.btn-secondary {
+    color: #000000;
+    box-shadow: inset 0 0 0 50px transparent;
+}
+
+.btn-primary2:hover {
+    box-shadow: inset 0 0 0 0 var(--primary);
+}
+
+.btn-secondary2:hover {
+    box-shadow: inset 0 0 0 0 var(--secondary);
+}
+
+/*** Navbar ***/
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    margin-left: 25px;
+    padding: 35px 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 0;
+    color: var(--dark);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--yell);
+}
+
+.navbar-dark .navbar-brand h1 {
+    color: #FFFFFF;
+}
+
+.navbar-dark .navbar-toggler {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-dark {
+        position: relative;
+        background: #FFFFFF;
+    }
+
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-dark .navbar-nav .nav-link.show,
+    .sticky-top.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: var(--dark);
+    }
+
+    .navbar-dark .navbar-brand h1 {
+        color: var(--primary);
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-dark {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(256, 256, 256, .1);
+        z-index: 999;
+    }
+    
+    .sticky-top.navbar-dark {
+        position: fixed;
+        background: #FFFFFF;
+    }
+
+    .navbar-dark .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: -1px;
+        left: 50%;
+        background: var(--yell);
+        transition: .5s;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover::before,
+    .navbar-dark .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.nav-contact::before {
+        display: none;
+    }
+
+    .sticky-top.navbar-dark .navbar-brand h1 {
+        color: var(--primary);
+    }
+}
+
+
+/*** Carousel ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 30, 62, .7);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/*** Section Title ***/
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background: var(--yell);
+    border-radius: 2px;
+}
+
+.section-title.text-center::before {
+    left: 50%;
+    margin-left: -75px;
+}
+
+.section-title.section-title-sm::before {
+    width: 90px;
+    height: 3px;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 5px;
+    bottom: 0px;
+    background: #FFFFFF;
+    -webkit-animation: section-title-run 5s infinite linear;
+    animation: section-title-run 5s infinite linear;
+}
+
+.section-title.section-title-sm::after {
+    width: 4px;
+    height: 3px;
+}
+
+.section-title.text-center::after {
+    -webkit-animation: section-title-run-center 5s infinite linear;
+    animation: section-title-run-center 5s infinite linear;
+}
+
+.section-title.section-title-sm::after {
+    -webkit-animation: section-title-run-sm 5s infinite linear;
+    animation: section-title-run-sm 5s infinite linear;
+}
+
+@-webkit-keyframes section-title-run {
+    0% {left: 0; } 50% { left : 145px; } 100% { left: 0; }
+}
+
+@-webkit-keyframes section-title-run-center {
+    0% { left: 50%; margin-left: -75px; } 50% { left : 50%; margin-left: 45px; } 100% { left: 50%; margin-left: -75px; }
+}
+
+@-webkit-keyframes section-title-run-sm {
+    0% {left: 0; } 50% { left : 85px; } 100% { left: 0; }
+}
+
+
+/*** Service ***/
+.service-item {
+    position: relative;
+    height: 300px;
+    padding: 0 30px;
+    transition: .5s;
+}
+
+.service-item .service-icon {
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+
+.service-item .service-icon i {
+    transform: rotate(45deg);
+}
+
+.service-item a.btn {
+    position: absolute;
+    width: 60px;
+    bottom: -48px;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+}
+
+.service-item:hover a.btn {
+    bottom: -24px;
+    opacity: 1;
+}
+
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-dots {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #DDDDDD;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--primary);
+}
+
+.testimonial-carousel .owl-item.center {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-carousel .owl-item .testimonial-item {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: #FFFFFF !important;
+    box-shadow: 0 0 30px #DDDDDD;
+}
+
+
+/*** Team ***/
+.team-item {
+    transition: .5s;
+}
+
+.team-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.team-social a.btn {
+    position: relative;
+    margin: 0 3px;
+    margin-top: 100px;
+    opacity: 0;
+}
+
+.team-item:hover {
+    box-shadow: 0 0 30px #DDDDDD;
+}
+
+.team-item:hover .team-social {
+    background: rgba(9, 30, 62, .7);
+}
+
+.team-item:hover .team-social a.btn:first-child {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s 0s;
+}
+
+.team-item:hover .team-social a.btn:nth-child(2) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .05s;
+}
+
+.team-item:hover .team-social a.btn:nth-child(3) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .1s;
+}
+
+.team-item:hover .team-social a.btn:nth-child(4) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .15s;
+}
+
+.team-item .team-img img,
+.blog-item .blog-img img  {
+    transition: .5s;
+}
+
+.team-item:hover .team-img img,
+.blog-item:hover .blog-img img {
+    transform: scale(1.15);
+}
+
+
+/*** Miscellaneous ***/
+@media (min-width: 991.98px) {
+    .facts {
+        position: relative;
+        margin-top: -75px;
+        z-index: 1;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.bg-header {
+    background: linear-gradient(rgba(3, 14, 30, 0.7), rgba(3, 14, 30, 0.7)), url(https://scontent.fkkc1-1.fna.fbcdn.net/v/t1.6435-9/194238350_277562860774729_1193704142719738603_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=300f58&_nc_eui2=AeEl4c3kLJMORXYPfPrCvHeBHpg8bXrxxYEemDxtevHFgf6M-0YrrPQmvAPL9sBFHBXtrMg9IUWeEKS-VmtuSr4Q&_nc_ohc=Dar7-9dHNNcAX_1iU9f&_nc_ht=scontent.fkkc1-1.fna&oh=00_AfChP_QxHYa28e1NOrpcEZ7Ec124prdRXTtdHDugJJaLTg&oe=6561E939) center center no-repeat;
+    background-size: cover;
+}
+
+.link-animated a {
+    transition: .5s;
+}
+
+.link-animated a:hover {
+    padding-left: 10px;
+}
+
+@media (min-width: 767.98px) {
+    .footer-about {
+        margin-bottom: -75px;
+    }
+}
+
+promotion-cards-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    flex-wrap: wrap;
+    margin: -10px; /* Adjust to add spacing between cards */
+}
+
+.promotion-card {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust card width and spacing */
+    margin: 10px; /* Adjust to add spacing between cards */
+    max-width: 400px; /* Adjust the maximum width as needed */
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.promotion-card:hover {
+    transform: scale(1.05); /* Add a subtle scaling effect on hover */
+}
+
+.promotion-card .img-box {
+    overflow: hidden;
+}
+
+.promotion-card .img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.promotion-card .content {
+    padding: 20px;
+}
+
+.promotion-card h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.promotion-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.promotion-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #009688;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.promotion-card a:hover {
+    background-color: #00796b; /* Darker color on hover */
+}
